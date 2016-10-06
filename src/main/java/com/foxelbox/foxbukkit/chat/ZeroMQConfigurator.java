@@ -28,9 +28,11 @@ public class ZeroMQConfigurator {
             String cValue = values[i + 1];
             switch(values[i].toLowerCase()) {
                 case "connect":
+                    System.out.println("connect: " + cValue); //Attempt to get more info
                     socket.connect(cValue);
                     break;
                 case "bind":
+                    System.out.println("bind: " + cValue); //Attempt to get more info
                     socket.bind(cValue);
                     break;
             }
