@@ -20,7 +20,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.foxelbox</groupId>
     <artifactId>FoxBukkitChat</artifactId>
-    <version>1.4.0-SNAPSHOT</version>
+    <version>1.4.0-JawaPort</version>
     <build>
         <plugins>
             <plugin>
@@ -115,7 +115,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot</artifactId>
-            <version>1.10.2-R0.1-SNAPSHOT</version>
+            <version>1.7.10-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -143,9 +143,13 @@
     </dependencies>
     <repositories>
         <repository>
+            <id>foxelbox-repo</id>
+            <url>https://maven.doridian.net/repository/maven-snapshots</url>
+        </repository>
+<!--        <repository>
             <id>bukkit-repo</id>
             <url>http://repo.bukkit.org/content/groups/public/</url>
-        </repository>
+        </repository> -->
         <repository>
             <id>mikeprimm-repo</id>
             <url>http://repo.mikeprimm.com</url>
@@ -153,10 +157,6 @@
         <repository>
             <id>sk89q-repo</id>
             <url>http://mvn2.sk89q.com/repo</url>
-        </repository>
-        <repository>
-            <id>foxelbox-repo</id>
-            <url>https://maven.doridian.net/repository/maven-snapshots</url>
         </repository>
     </repositories>
 </project>

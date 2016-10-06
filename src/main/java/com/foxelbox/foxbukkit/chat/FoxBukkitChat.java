@@ -19,7 +19,7 @@ package com.foxelbox.foxbukkit.chat;
 import com.foxelbox.dependencies.config.Configuration;
 import com.foxelbox.dependencies.redis.RedisManager;
 import com.foxelbox.dependencies.threading.SimpleThreadCreator;
-import net.minecraft.server.v1_10_R1.PlayerConnection;
+import net.minecraft.server.v1_7_R4.PlayerConnection;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.LogEvent;
@@ -51,11 +51,11 @@ public class FoxBukkitChat extends JavaPlugin {
     public RedisManager redisManager;
     public ChatQueueHandler chatQueueHandler;
     public PlayerHelper playerHelper;
-
+//getting player nick? or UUID? It looks like UUID
     public String getPlayerNick(Player ply) {
         return getPlayerNick(ply.getUniqueId());
     }
-
+//THis seems to convert the UUID to a string
     public String getPlayerNick(UUID uuid) {
         return playerHelper.playerNicks.get(uuid.toString());
     }
