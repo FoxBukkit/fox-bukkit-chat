@@ -32,6 +32,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
+import java.util.logging.Level;
 
 public class FoxBukkitChat extends JavaPlugin {
     public FoxBukkitChat() {
@@ -64,10 +65,10 @@ public class FoxBukkitChat extends JavaPlugin {
         final Plugin permissionsPlugin = getServer().getPluginManager().getPlugin("FoxBukkitPermissions");
         if(permissionsPlugin == null) {
             permissionsAdapter = null;
-            System.err.println("Could not find FoxBukkitPermissions. Disabling enhanced permissions API.");
+            getLogger().log(Level.WARNING, "Could not find FoxBukkitPermissions. Disabling enhanced permissions API.");
         } else {
             permissionsAdapter = new PermissionsAdapter(permissionsPlugin);
-            System.out.println("Hooked FoxBukkitPermissions. Enabled enhanced permissions API.");
+            getLogger().log(Level.INFO, "Hooked FoxBukkitPermissions. Enabled enhanced permissions API.");
         }
 
         getDataFolder().mkdirs();
