@@ -1,20 +1,21 @@
-/**
- * This file is part of FoxBukkitChat.
+/*
+ * foxbukkit-chat - ${project.description}
+ * Copyright © ${year} Doridian (git@doridian.net)
  *
- * FoxBukkitChat is free software: you can redistribute it and/or modify
+ * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * FoxBukkitChat is distributed in the hope that it will be useful,
+ * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Lesser General Public License for more details.
  *
  * You should have received a copy of the GNU Lesser General Public License
- * along with FoxBukkitChat.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.foxelbox.foxbukkit.chat.html;
+package net.doridian.foxbukkit.chat.html;
 
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.chat.BaseComponent;
@@ -69,20 +70,20 @@ public final class CraftChatMessage {
                     if (format == ChatColor.RESET) {
                         modifier = defaultModifier.duplicate();
                     } else if (IsColor(format)) {
-                        switch (format) {
-                            case BOLD:
+                        switch (format.toString().charAt(1)) {
+                            case 'l':
                                 modifier.setBold(Boolean.TRUE);
                                 break;
-                            case ITALIC:
+                            case 'o':
                                 modifier.setItalic(Boolean.TRUE);
                                 break;
-                            case STRIKETHROUGH:
+                            case 'm':
                                 modifier.setStrikethrough(Boolean.TRUE);
                                 break;
-                            case UNDERLINE:
+                            case 'n':
                                 modifier.setUnderlined(Boolean.TRUE);
                                 break;
-                            case MAGIC:
+                            case 'k':
                                 modifier.setObfuscated(Boolean.TRUE);
                                 break;
                             default:

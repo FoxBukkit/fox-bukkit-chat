@@ -1,22 +1,23 @@
-/**
- * This file is part of FoxBukkitChat.
+/*
+ * foxbukkit-chat - ${project.description}
+ * Copyright © ${year} Doridian (git@doridian.net)
  *
- * FoxBukkitChat is free software: you can redistribute it and/or modify
+ * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * FoxBukkitChat is distributed in the hope that it will be useful,
+ * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Lesser General Public License for more details.
  *
  * You should have received a copy of the GNU Lesser General Public License
- * along with FoxBukkitChat.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.foxelbox.foxbukkit.chat;
+package net.doridian.foxbukkit.chat;
 
-import static com.foxelbox.foxbukkit.chat.HTMLParser.escape;
+import static net.doridian.foxbukkit.chat.HTMLParser.escape;
 
 public class MessageHelper {
 	private static final String PLAYER_FORMAT = "<span onClick=\"suggest_command('/pm %1$s ')\"%3$s>%2$s</span>";
