@@ -20,6 +20,7 @@ commands:
     aliases:
       - whisper
       - tell
+      - msg
   reloadchat:
     description: Reload chat
     permission: foxbukkit.reloadchat
