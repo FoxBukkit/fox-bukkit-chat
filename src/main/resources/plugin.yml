@@ -6,17 +6,17 @@ commands:
   me:
     description: /me
     permission: foxbukkit.me
-    usage: /<command>
+    usage: /<command> <action...>
     aliases:
       - action
   ignore:
     description: Ignore system management
     permission: foxbukkit.ignore
-    usage: /<command> [add/remove/list/clear] Player
+    usage: /<command> [add/remove/list/clear] <target>
   pm:
     description: Private message
     permission: foxbukkit.pm
-    usage: /<command>
+    usage: /<command> <target> <msg...>
     aliases:
       - whisper
       - tell
