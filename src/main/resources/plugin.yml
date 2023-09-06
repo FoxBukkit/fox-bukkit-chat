@@ -1,6 +1,7 @@
 name: FoxBukkitChat
 main: net.doridian.foxbukkit.chat.FoxBukkitChat
 version: 1.4.1
+api-version: '1.20'
 softdepend: [FoxBukkitPermissions]
 commands:
   me:
